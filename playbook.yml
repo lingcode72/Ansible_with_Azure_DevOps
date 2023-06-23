@@ -1,8 +1,8 @@
-- hosts: webserver
+- hosts: ansible
   become: true
   roles:
     - web
-- hosts: mysqlserver
+- hosts: webserver
   become: true
   vars_files: roles/database/vars/main.yml
   roles:
