@@ -7,9 +7,5 @@
   #  tasks:
   #   - name: "install apache2"
   apt: name=apache2 update_cache=yes state=latest
-- name: overwrite default Apache config
-  template:
-    src: /home/momo/ANSIBLE/projet-ansible/info.php
-    dest: /var/www/html/
 - name: "Install php"
   apt: name=php update_cache=yes state=latest
