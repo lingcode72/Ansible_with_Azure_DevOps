@@ -1,4 +1,4 @@
-- hosts: webserver
+- hosts: webserver1
   become: true
   roles:
     - web
